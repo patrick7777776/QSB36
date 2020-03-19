@@ -7,7 +7,10 @@ defmodule Sunny.MixProject do
       version: "0.1.0",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      description: description(),
+      package: package(),
+      source_url: "https://github.com/patrick7777776/QSB36"
     ]
   end
 
@@ -27,4 +30,17 @@ defmodule Sunny.MixProject do
 			{:ex_doc, "~> 0.19", only: :dev}
     ]
   end
+
+  defp description() do
+    "Query SunnyBoy 3.6 inverter for current output in watts, total yield and other information via the inverter's internal web interface."
+  end
+
+  defp package() do
+    [
+      name: "qsb36",
+      licenses: ["AGPL-3.0"],
+      links: %{"GitHub" => "https://github.com/patrick7777776/QSB36"}
+    ]
+  end
+
 end
