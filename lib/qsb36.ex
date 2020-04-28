@@ -96,6 +96,9 @@ defmodule QSB36 do
       {:ok, %{"result" => %{"sid" => sid}}} ->
         {:ok, Session.set_sid(session, sid)}
 
+      {:ok, %{"err" => error}} ->
+        {:error, error}
+
       {:error, error} ->
         {:error, error}
     end
