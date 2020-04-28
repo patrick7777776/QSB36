@@ -56,7 +56,7 @@ Add `qsb36` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:qsb36, "~> 0.1.0"}
+    {:qsb36, "~> 0.1.1"}
   ]
 end
 ```
